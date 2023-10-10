@@ -1,0 +1,84 @@
+@use "colors" as *;
+@use "typography" as *;
+@use "sizes" as *;
+
+// colors
+$color-text-default: $color-neutral-900;
+$color-text-inverse: $color-neutral-100;
+$color-text-accent: $color-accent-400;
+$color-background-default: $color-neutral-100;
+$color-background-middle: $color-neutral-200;
+$color-background-inverse: $color-neutral-900;
+
+// body
+$body-font-family: $font-family-base;
+$body-font-size: $font-size-400;
+$body-font-weight: $font-weight-default;
+$body-line-height: $line-height-400;
+$body-text-color: $color-text-default;
+$body-background-color: $color-background-default;
+
+// layout
+$grid-gap: $size-6;
+$flex-group-gap: $size-4;
+
+$hero-padding: var(--hero-section-padding-block);
+$learn-more-section-padding: var(--learn-more-section-padding-block);
+$testimonial-section-padding: var(--testimonial-section-padding-block);
+
+$card-body-padding: var(--card-body-padding);
+
+$container-inline-padding: var(--container-inline-padding);
+$container-max-width: 70rem;
+$container-max-width-wider: 100rem;
+
+// button
+$button-font-family: $body-font-family;
+$button-font-size: $body-font-size;
+$button-font-weight: $font-weight-semi-bold;
+$button-text-transform: none;
+$button-line-height: $line-height-450;
+$button-padding-block: 0.375em; // 32px * 0.375 = 12px
+$button-padding-inline: 0.75em; // 32px * 0.75 = 24px
+$button-border: 0;
+$button-border-radius: 0;
+// button primary
+$button-primary-text-color: $color-text-default;
+$button-primary-background-color: $color-accent-400;
+$button-primary-text-color-hover: $color-text-accent;
+$button-primary-background-color-hover: transparent;
+$button-primary-outline-color-hover: $color-accent-400;
+// button secondary
+$button-secondary-text-color: $color-text-inverse;
+$button-secondary-background-color: transparent;
+$button-secondary-text-color-hover: $color-text-accent;
+$button-secondary-underline-color: $color-accent-400;
+$button-secondary-underline-color-hover: $color-accent-400;
+
+$border-radius-1: $size-2;
+$border-radius-2: $size-4;
+
+$button-border-radius: $border-radius-1;
+
+$form-input-border-radius: $border-radius-1;
+
+// shadows
+$box-shadow-1: 0 $size-1 $size-4 rgb(0 0 0 / 0.05);
+$box-shadow-2: 0 $size-1 $size-4 rgb(0 0 0 / 0.15);
+
+// cards
+$card-flow-spacing: $size-2;
+$card-body-padding: $size-8;
+$card-background-default: $color-primary-100;
+$card-color-default: $body-background-color;
+$card-font-family: $body-font-family;
+$card-line-height: 1.25;
+$card-heading-font-family: $font-family-accent;
+$card-heading-color-default: $card-color-default;
+$card-heading-font-size: $font-size-600;
+$card-heading-font-weight: $font-weight-bold;
+$card-heading-letter-spacing: $letter-spacing-loose;
+$card-heading-line-height: 1;
+$card-heading-text-transform: uppercase;
+$card-border-radius: $border-radius-2;
+$card-box-shadow: $box-shadow-1;
