@@ -21,7 +21,7 @@
             }
         }
     }
-    
+
     // line heights custom properties
     @each $screen-size, $line-height-map in $line-heights {
         @if ($screen-size == small) {
@@ -30,7 +30,8 @@
             }
         } @else {
             @include mq($screen-size) {
-                @each $line-height-name, $line-height-value in $line-height-map {
+                @each $line-height-name, $line-height-value in $line-height-map
+                {
                     --lh-#{$line-height-name}: #{$line-height-value};
                 }
             }
@@ -38,6 +39,10 @@
     }
 
     // sections custom properties
+    --header-padding-block-start: 2.3125rem;
+    @include mq(large) {
+        --header-padding-block-start: 3.61125rem;
+    }
     --hero-section-padding-block: 8.125rem 15.5rem;
     @include mq(medium) {
         --hero-section-padding-block: 7.625rem 12.7rem;
@@ -76,5 +81,4 @@
     @include mq(medium) {
         --container-inline-padding: 2.5rem;
     }
-
 }

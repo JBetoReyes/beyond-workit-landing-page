@@ -2,6 +2,17 @@
 
 .hero-section {
     padding: $hero-padding;
-    background-color: $hero-section-background-color;
-    clip-path: ellipse(100% 100% at 50% 0%);
+    position: relative;
+    &.top-background-layer {
+        background-color: $hero-section-bottom-background-color;
+    }
+    .bottom-background-layer {
+        background-color: $hero-section-background-color;
+        clip-path: ellipse(100% 100% at 50% 0%);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
 }

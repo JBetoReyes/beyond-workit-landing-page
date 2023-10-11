@@ -22,6 +22,7 @@ $body-background-color: $color-background-default;
 $grid-gap: $size-6;
 $flex-group-gap: $size-4;
 
+$header-padding-block-start: var(--header-padding-block-start);
 $hero-padding: var(--hero-section-padding-block);
 $learn-more-section-padding: var(--learn-more-section-padding-block);
 $testimonial-section-padding: var(--testimonial-section-padding-block);
@@ -86,3 +87,4 @@ $card-box-shadow: $box-shadow-1;
 
 // hero section
 $hero-section-background-color: $color-background-inverse;
+$hero-section-bottom-background-color: $color-background-middle;
