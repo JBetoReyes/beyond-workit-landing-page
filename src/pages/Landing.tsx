@@ -1,8 +1,16 @@
+import { Fragment } from "react";
+import Layout from "../templates/Layout"
+import HeroSection from "../organisms/HeroSection";
+
 const Landing = () => {
     return (
-        <div>
-            <h1>Landing</h1>
-        </div>
+        <Fragment>
+            <Layout>
+                <main>
+                    <HeroSection/>
+                </main>
+            </Layout>
+        </Fragment>
     );
 };
 
