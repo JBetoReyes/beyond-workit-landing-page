@@ -14,16 +14,22 @@
     padding: $button-padding-block $button-padding-inline;
     transition: 275ms ease;
 
+    &:is(:hover, :focus) {
+        background: $color-neutral-100;
+        color: $color-neutral-900;
+    }
+
     &[data-type="primary"] {
         background-color: $button-primary-background-color;
         color: $button-primary-text-color;
 
-        :is(:hover, :focus) {
+        &:is(:hover, :focus) {
             --outline-size: 2px;
 
             background-color: $button-primary-background-color-hover;
             color: $button-primary-text-color-hover;
-            outline: var(--outline-size) solid $button-primary-outline-color-hover;
+            outline: var(--outline-size) solid
+                $button-primary-outline-color-hover;
             outline-offset: calc(var(--outline-size) * -1);
         }
     }
@@ -31,10 +37,8 @@
     &[data-type="secondary"] {
         background-color: $button-secondary-background-color;
         color: $button-secondary-text-color;
-        text-decoration: underline;
-        text-decoration-color: $button-secondary-underline-color;
 
-        :is(:hover, :focus) {
+        &:is(:hover, :focus) {
             color: $button-secondary-text-color-hover;
             text-decoration-color: $button-secondary-underline-color-hover;
         }
@@ -52,10 +56,5 @@
         outline: var(--outline-size) solid $color-neutral-100;
         outline-offset: calc(var(--outline-size) * -1);
         color: $color-neutral-100;
-    }
-
-    &:is(:hover, :focus) {
-        background: $color-neutral-100;
-        color: $color-neutral-900;
     }
 }
