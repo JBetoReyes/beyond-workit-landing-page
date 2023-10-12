@@ -34,9 +34,9 @@ $container-max-width: 70rem;
 $container-max-width-wider: 100rem;
 
 // button
-$button-font-family: $body-font-family;
+$button-font-family: $font-family-base-bold;
 $button-font-size: $body-font-size;
-$button-font-weight: $font-weight-semi-bold;
+$button-font-weight: $font-weight-bold;
 $button-text-transform: none;
 $button-line-height: $line-height-450;
 $button-padding-block: 0.375em; // 32px * 0.375 = 12px
@@ -84,6 +84,7 @@ $card-border-radius: $border-radius-2;
 $card-box-shadow: $box-shadow-1;
 
 // header
+$header-section-background-color: $color-background-inverse;
 
 // hero section
 $hero-section-background-color: $color-background-inverse;

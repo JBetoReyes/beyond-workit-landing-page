@@ -2,8 +2,8 @@
     font-family: "Fraunces";
     font-weight: 500;
     font-display: swap;
-    src: url("/fonts/fraunces.woff2") format("woff2"),
-        url("/fonts/fraunces.woff") format("woff"); 
+    src: url("/fonts/fraunces.ttf") format("ttf"),
+        url("/fonts/fraunces.woff") format("woff");
 }
 
 @font-face {
@@ -12,4 +12,11 @@
     font-display: swap;
     src: url("/fonts/manrope.woff2") format("woff2"),
         url("/fonts/manrope.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Manrope Bold";
+    font-weight: 700;
+    font-display: swap;
+    src: url("/fonts/manrope-bold.ttf") format("ttf");
 }
