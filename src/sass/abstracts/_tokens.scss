@@ -33,6 +33,13 @@ $container-inline-padding: var(--container-inline-padding);
 $container-max-width: 70rem;
 $container-max-width-wider: 100rem;
 
+//utilities
+
+// text underline
+$text-underline-color: $color-accent-400;
+$text-underline-thickness: 3px;
+$text-underline-offset: 4px;
+
 // button
 $button-font-family: $font-family-base-bold;
 $button-font-size: $body-font-size;
@@ -42,6 +49,7 @@ $button-line-height: $line-height-450;
 $button-padding-block: 0.375em; // 32px * 0.375 = 12px
 $button-padding-inline: 0.75em; // 32px * 0.75 = 24px
 $button-border: 0;
+$button-border-hover: 0;
 $button-border-radius: 0;
 // button primary
 $button-primary-text-color: $color-text-default;

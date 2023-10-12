@@ -1,0 +1,6 @@
+@use "../abstracts/" as *;
+
+.text-underline {
+    text-underline-offset: $text-underline-offset;
+    text-decoration: underline $text-underline-color $text-underline-thickness;
+}
