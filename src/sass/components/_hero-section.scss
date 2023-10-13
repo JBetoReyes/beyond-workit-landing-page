@@ -1,21 +1,18 @@
 @use "../abstracts/" as *;
 
 .hero-section {
-    padding: $hero-padding;
+    padding-block: $hero-padding-block;
     position: relative;
     &.top-background-layer {
-        background-color: $hero-section-bottom-background-color;
+        background-color: $hero-section-background-color;
+        clip-path: ellipse(100% 100% at 50% 0%);
     }
     .bottom-background-layer {
-        background-color: $hero-section-background-color;
-        clip-path: ellipse(100% 100% at 40% 0%);
+        background-color: $hero-section-bottom-background-color;
         position: absolute;
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
-        @include mq(medium) {
-            clip-path: ellipse(100% 100% at 50% 0%);
-        }
     }
 }
