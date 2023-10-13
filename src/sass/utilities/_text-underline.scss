@@ -3,4 +3,7 @@
 .text-underline {
     text-underline-offset: $text-underline-offset;
     text-decoration: underline $text-underline-color $text-underline-thickness;
+    @include mq(large) {
+        text-underline-offset: 10px;
+    }
 }
