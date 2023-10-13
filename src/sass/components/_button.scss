@@ -22,6 +22,12 @@
     &[data-type="primary"] {
         background-color: $button-primary-background-color;
         color: $button-primary-text-color;
+        transition: 0.3s ease-out;
+        padding: $size-3 $size-6;
+
+        @include mq(large) {
+            padding: $size-4 $size-8;
+        }
 
         &:is(:hover, :focus) {
             --outline-size: 2px;
