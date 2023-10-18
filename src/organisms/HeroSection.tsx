@@ -3,7 +3,6 @@ import PrimaryButton from "../atoms/PrimaryButton";
 const HeroSection = () => {
     return (
         <section className="hero-section">
-            {/* <div className="bottom-background-layer"></div> */}
             <div className="hero-section__background">
                 <div className="container">
                     <div className="hero-section__content | flow">
