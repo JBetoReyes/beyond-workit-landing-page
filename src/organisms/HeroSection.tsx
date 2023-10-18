@@ -16,6 +16,8 @@ const HeroSection = () => {
                     </div>
                 </div>
             </div>
+            <img className="hero-section__pattern" data-type="left" src="/assets/images/bg-pattern-1.svg" alt="" />
+            <img className="hero-section__pattern" data-type="right" src="/assets/images/bg-pattern-2.svg" alt="" />
             <img className="hero-section__image" src="/assets/images/image-hero.webp" alt="Iphone 11" />
         </section>
     );
