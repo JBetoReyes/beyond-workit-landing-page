@@ -1,27 +1,30 @@
 @use "../abstracts/" as *;
 
 .hero-section {
-    padding-block: $hero-padding-block;
     position: relative;
-    &__container {
+    &__background {
+        background-color: $hero-section-background-color;
+        clip-path: ellipse(180% 100% at 50% 0%);
+    }
+    &__content {
+        padding-block: $hero-padding-block;
         display: flex;
         flex-direction: column;
         align-items: center;
         --flow-spacer: #{$size-9};
     }
-    &.top-background-layer {
-        background-color: $hero-section-background-color;
-        clip-path: ellipse(180% 100% at 50% 0%);
-        @include mq(medium) {
-            clip-path: ellipse(100% 100% at 50% 0%);
-        }
-    }
-    .bottom-background-layer {
-        background-color: $hero-section-bottom-background-color;
+    &__image {
         position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
+        bottom: -5.875rem;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 21.875rem;
+        @include mq(medium) {
+            bottom: -8.875rem;
+            max-width: 30rem;
+        }
+        @include mq(large) {
+            max-width: 44.68rem;
+        }
     }
 }
