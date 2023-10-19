@@ -97,9 +97,21 @@ $heading-1-line-height: $line-height-700;
 $heading-1-font-weight: $font-weight-semi-bold;
 $heading-1-text-color: $color-text-inverse;
 
+$heading-3-font-size: $font-size-600;
+$heading-3-line-height: $line-height-500;
+$heading-3-font-weight: $font-weight-semi-bold;
+$heading-3-text-color: $color-text-default;
+
 // hero section
 $hero-section-background-color: $color-background-inverse;
 $hero-section-bottom-background-color: $color-background-middle;
 
 // about section
 $about-section-background-color: $color-background-middle;
+
+// about card
+$about-card-border: solid 1px $color-text-default;
+$about-card-border-radius: 30.5px;
+$about-card-padding: .3125rem 1rem;
+$about-card-font-size: $font-size-500;
+$about-card-font-family: $font-family-accent;
