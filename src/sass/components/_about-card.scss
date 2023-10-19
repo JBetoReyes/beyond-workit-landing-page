@@ -1,0 +1,13 @@
+@use "../abstracts/" as *;
+
+.about-card {
+    text-align: center;
+    &__number {
+        display: inline-block;
+        border: $about-card-border;
+        border-radius: $about-card-border-radius;
+        padding: $about-card-padding;
+        font-size: $about-card-font-size;
+        font-family: $about-card-font-family;
+    }
+}
