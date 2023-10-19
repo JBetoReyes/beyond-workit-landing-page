@@ -2,12 +2,37 @@
 
 .about-card {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    @include mq(medium) {
+        text-align: left;
+        flex-direction: row;
+        align-items: flex-center;
+        text-align: left;
+        gap: 2rem;
+    }
+
+    @include mq(large) {
+        text-align: center;
+        flex-direction: column;
+        
+    }
     &__number {
-        display: inline-block;
         border: $about-card-border;
         border-radius: $about-card-border-radius;
         padding: $about-card-padding;
         font-size: $about-card-font-size;
         font-family: $about-card-font-family;
+        width: 3rem;
+        flex-shrink: 0;
+        text-align: center;
+    }
+    &__content {
+        --flow-spacer: 1rem;
+        @include mq(large) {
+            --flow-spacer: 1.75rem;
+        }
     }
 }

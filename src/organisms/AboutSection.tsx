@@ -19,7 +19,7 @@ const AboutSection = () => {
     return (
         <section className="about">
             <div className="container">
-                <div className="about__card-list">
+                <div className="about__card-list | switcher">
                     {aboutCards.map((aboutCard, index) => (
                         <AboutCard key={index} cardNumber={(index + 1).toString()} {...aboutCard} />
                     ))}

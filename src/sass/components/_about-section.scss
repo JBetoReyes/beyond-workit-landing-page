@@ -3,4 +3,5 @@
 .about {
     background-color: $about-section-background-color;
     padding-block: $about-section-padding;
+    --switcher-breakpoint: 65rem; 
 }

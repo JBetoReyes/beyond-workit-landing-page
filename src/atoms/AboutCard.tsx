@@ -9,7 +9,7 @@ const AboutCard = (aboutCardProps: AboutCardProps) => {
     return (
         <div className="about-card">
             <div className="about-card__number">{cardNumber}</div>
-            <div className="about-card__content">
+            <div className="about-card__content | flow">
                 <div className="about-card__header | heading-3">{title}</div>
                 <div className="about-card__text">{text}</div>
             </div>
