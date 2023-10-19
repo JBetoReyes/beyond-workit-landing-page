@@ -1,0 +1,6 @@
+@use "../abstracts/" as *;
+
+.about {
+    background-color: $about-section-background-color;
+    padding-block: $about-section-padding;
+}
