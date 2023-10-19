@@ -24,7 +24,7 @@ $flex-group-gap: $size-4;
 
 $header-padding-block-start: var(--header-padding-block-start);
 $hero-padding-block: var(--hero-section-padding-block);
-$learn-more-section-padding: var(--learn-more-section-padding-block);
+$about-section-padding: var(--about-section-padding-block);
 $testimonial-section-padding: var(--testimonial-section-padding-block);
 
 $card-body-padding: var(--card-body-padding);
@@ -90,13 +90,16 @@ $card-box-shadow: $box-shadow-1;
 // header
 $header-section-background-color: $color-background-inverse;
 
-// hero section
-$hero-section-background-color: $color-background-inverse;
-$hero-section-bottom-background-color: $color-background-middle;
-
 // heading
 $headings-font-family: $font-family-accent;
 $heading-1-font-size: $font-size-800;
 $heading-1-line-height: $line-height-700;
 $heading-1-font-weight: $font-weight-semi-bold;
 $heading-1-text-color: $color-text-inverse;
+
+// hero section
+$hero-section-background-color: $color-background-inverse;
+$hero-section-bottom-background-color: $color-background-middle;
+
+// about section
+$about-section-background-color: $color-background-middle;

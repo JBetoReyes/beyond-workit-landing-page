@@ -51,12 +51,12 @@
         --hero-section-padding-block: 9.125rem 20.275rem;
     }
 
-    --learn-more-section-padding-block: 10rem 4.5rem;
+    --about-section-padding-block: 10rem 4.5rem;
     @include mq(medium) {
-        --learn-more-section-padding-block: 12.75rem 6.5rem;
+        --about-section-padding-block: 12.75rem 6.5rem;
     }
     @include mq(large) {
-        --learn-more-section-padding-block: 15.9375rem 10.6875;
+        --about-section-padding-block: 15.9375rem 10.6875;
     }
 
     --testimonial-section-padding-block: 2.9374rem 15rem;
