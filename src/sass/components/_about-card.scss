@@ -9,7 +9,7 @@
     @include mq(medium) {
         text-align: left;
         flex-direction: row;
-        align-items: flex-center;
+        align-items: center;
         text-align: left;
         gap: 2rem;
     }
@@ -17,7 +17,7 @@
     @include mq(large) {
         text-align: center;
         flex-direction: column;
-        
+        gap: 3.5rem;
     }
     &__number {
         border: $about-card-border;
