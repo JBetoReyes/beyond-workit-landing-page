@@ -20,5 +20,36 @@
     } @else {
         @error "The keyword #{$size} is not in the $breakpoints map.";
     }
+}
 
+%pseudobg {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+@mixin pseudo-bg($bg-color, $clip-path: none, $beforeOrAfter: before) {
+    position: relative;
+
+    @if $beforeOrAfter == before {
+        &::before {
+            @extend %pseudobg;
+            background-color: $bg-color;
+            @if $clip-path {
+                clip-path: $clip-path;
+            }
+        }
+    } @else {
+        &::after {
+            @extend %pseudobg;
+            background-color: $bg-color;
+            @if $clip-path {
+                clip-path: $clip-path;
+            }
+        }
+    }
 }

@@ -1,11 +1,6 @@
 @use "../abstracts/" as *;
 
 .hero-section {
-    position: relative;
-    &__background {
-        background-color: $hero-section-background-color;
-        clip-path: ellipse(180% 100% at 50% 0%);
-    }
     &__content {
         padding-block: $hero-padding-block;
         display: flex;
@@ -50,4 +45,6 @@
             max-width: 44.68rem;
         }
     }
+    @include pseudo-bg($hero-section-background-color, ellipse(180% 100% at 50% 0%), after );
+    @include pseudo-bg($hero-section-bottom-background-color, none, before);
 }

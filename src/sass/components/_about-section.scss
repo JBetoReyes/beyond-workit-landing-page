@@ -1,10 +1,21 @@
 @use "../abstracts/" as *;
 
 .about {
-    background-color: $about-section-background-color;
     padding-block: $about-section-padding;
+    position: relative;
     --switcher-breakpoint: 65rem;
     --grid-gap: 2.5rem; 
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: $about-section-background-color;
+        clip-path: ellipse(180% 100% at 50% 0%);
+        z-index: -1;
+    }
     @include mq(medium) {
         --grid-gap: 3rem;
     }
