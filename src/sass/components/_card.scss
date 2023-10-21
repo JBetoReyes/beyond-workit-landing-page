@@ -2,6 +2,7 @@
 
 .card {
     display: grid;
+    position: relative;
     justify-items: $card-justify-items;
     align-items: center;
     gap: $card-flow-spacing;
@@ -12,6 +13,10 @@
     line-height: $card-line-height;
     border-radius: $card-border-radius;
     box-shadow: $card-box-shadow;
+
+    @include mq(medium) {
+        justify-items: start;
+    }
 
     &__heading {
         color: $card-heading-color-default;
@@ -24,9 +29,22 @@
 
     &__content {
         text-align: $card-content-text-align;
+        @include mq(medium) {
+            text-align: start;
+        }
     }
 
     &__button {
         margin-block-start: $card-button-margin-block-start;
+    }
+
+    &__pattern {
+        display: none;
+        @include mq(medium) {
+            display: block;
+            position: absolute;
+            bottom: -105px;
+            right: 12px;
+        }
     }
 }

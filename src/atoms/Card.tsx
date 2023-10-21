@@ -12,6 +12,7 @@ const Card = (cardProps: CardProps) => {
             <h2 className="card__heading | heading-2">{header}</h2>
             <p className="card__content">{content}</p>
             <button className="card__button | button" data-type="primary">{ctaText}</button>
+            <img className="card__pattern" src="/assets/images/bg-pattern-3.svg" alt="decorative pattern" />
         </div>
     );
 };
