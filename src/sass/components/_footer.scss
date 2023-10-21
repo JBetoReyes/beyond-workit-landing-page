@@ -1,0 +1,25 @@
+@use "../abstracts/" as *;
+
+.footer {
+    &__container {
+        margin-inline: auto;
+        margin-block-end: 3.98rem;
+        width: 7.25rem;
+        --flow-spacer: 3.5625rem;
+        @include mq(medium) {
+            margin-block-end: 5rem;
+        }
+        @include mq(large) {
+            margin-block-end: 6.875rem;
+        }
+    }
+    &__logo {
+        margin-inline: auto;
+        width: 5.9375rem;
+        height: 1.5625rem;
+    }
+    &__icon-list {
+        display: flex;
+        justify-content: space-between;
+    }
+}

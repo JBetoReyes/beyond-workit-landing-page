@@ -1,3 +1,4 @@
+import Footer from "../organisms/Footer";
 import Header from "../organisms/Header";
 
 type LayoutProps = {
@@ -8,11 +9,10 @@ const Layout = ({ children }: LayoutProps) => {
     return (
         <>
             <Header />
-            {
-                children
-            }
+            {children}
+            <Footer />
         </>
-    )
-}
+    );
+};
 
 export default Layout;
