@@ -5,11 +5,12 @@
     margin-inline: auto;
     max-width: 440px;
     @include mq(medium) {
-        max-width: 840px;
+        max-width: 43rem;
     }
     @include mq(large) {
         max-width: unset;
-    }
+    } 
+
     &__content {
         display: grid;
         grid-template-rows: repeat(10, 1fr);
