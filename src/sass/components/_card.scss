@@ -2,6 +2,8 @@
 
 .card {
     display: grid;
+    justify-items: $card-justify-items;
+    align-items: center;
     gap: $card-flow-spacing;
     padding: $card-body-padding;
     background-color: $card-background-default;
@@ -18,5 +20,13 @@
         text-transform: $card-heading-text-transform;
         font-weight: $card-heading-font-weight;
         line-height: $card-heading-line-height;
+    }
+
+    &__content {
+        text-align: $card-content-text-align;
+    }
+
+    &__button {
+        margin-block-start: $card-button-margin-block-start;
     }
 }

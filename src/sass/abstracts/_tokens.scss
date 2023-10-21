@@ -72,19 +72,22 @@ $box-shadow-1: 0 $size-1 $size-4 rgb(0 0 0 / 0.05);
 $box-shadow-2: 0 $size-1 $size-4 rgb(0 0 0 / 0.15);
 
 // cards
-$card-flow-spacing: $size-2;
+$card-justify-items: center;
+$card-flow-spacing: $size-4;
 $card-body-padding: $size-8;
-$card-background-default: $color-neutral-100;
+$card-background-default: $color-background-inverse;
 $card-color-default: $body-background-color;
 $card-font-family: $body-font-family;
-$card-line-height: 1.25;
+$card-line-height: $line-height-400;
 $card-heading-font-family: $font-family-accent;
 $card-heading-color-default: $card-color-default;
 $card-heading-font-size: $font-size-600;
 $card-heading-font-weight: $font-weight-semi-bold;
 $card-heading-line-height: 1;
-$card-heading-text-transform: uppercase;
-$card-border-radius: $border-radius-2;
+$card-heading-text-transform: unset;
+$card-content-text-align: center;
+$card-button-margin-block-start: $size-2;
+$card-border-radius: unset;
 $card-box-shadow: $box-shadow-1;
 
 // header
@@ -96,6 +99,8 @@ $heading-1-font-size: $font-size-800;
 $heading-1-line-height: $line-height-700;
 $heading-1-font-weight: $font-weight-semi-bold;
 $heading-1-text-color: $color-text-inverse;
+
+$heading-2-font-size: $font-size-700;
 
 $heading-3-font-size: $font-size-600;
 $heading-3-line-height: $line-height-500;
@@ -115,3 +120,6 @@ $about-card-border-radius: 30.5px;
 $about-card-padding: .5625rem 1rem;
 $about-card-font-size: $font-size-500;
 $about-card-font-family: $font-family-accent;
+
+// testimonial section
+$testimonial-image-inline: $size-8;
