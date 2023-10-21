@@ -43,8 +43,13 @@
         @include mq(medium) {
             display: block;
             position: absolute;
-            bottom: -105px;
-            right: 12px;
+            bottom: -6.5625rem;
+            right: .75rem;
+        }
+
+        @include mq(large) {
+            bottom: -3.8586rem;
+            right: 4.54rem;
         }
     }
 }
