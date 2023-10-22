@@ -6,7 +6,7 @@ const Header = () => {
             <div className="header__container | container ">
                 <div className="header__logo">
                     <img
-                        src="/assets/images/logo-light.svg"
+                        src="./assets/images/logo-light.svg"
                         alt="workit logo"
                         className="header__logo-image"
                     />
