@@ -24,11 +24,11 @@ jobs:
                   npm ci
                   npm run build
 
-            - name: Fix permissions
-              run: |
-                  chmod -v -R +rX "dist/" | while read line; do
-                    echo "::warning title=Invalid file permissions automatically fixed::$line"
-                  done
+            # - name: Fix permissions
+            #   run: |
+            #       chmod -v -R +rX "dist/" | while read line; do
+            #         echo "::warning title=Invalid file permissions automatically fixed::$line"
+            #       done
 
             - name: Deploy 🚀
               uses: JamesIves/github-pages-deploy-action@v4
