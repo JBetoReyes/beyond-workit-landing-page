@@ -5,6 +5,7 @@ import htmlPurge from "vite-plugin-purgecss";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+    base: "/beyond-workit-landing-page/",
     plugins: [
         htmlPurge({
             content: ["./src/**/*.html", "./src/**/*.tsx", "./src/**/*.ts"],
