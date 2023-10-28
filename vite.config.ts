@@ -9,6 +9,7 @@ export default defineConfig({
     plugins: [
         htmlPurge({
             content: ["./src/**/*.html", "./src/**/*.tsx", "./src/**/*.ts"],
+            safelist: ["html", "body"],
         }) as PluginOption,
         react(),
     ],
